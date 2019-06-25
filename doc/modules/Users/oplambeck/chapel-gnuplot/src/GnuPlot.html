@@ -1,0 +1,939 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>GnuPlot &mdash; chpldoc 0.0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="chpldoc 0.0.1 documentation" href="../../../../../index.html"/>
+        <link rel="prev" title="chpldoc documentation" href="../../../../../index.html"/> 
+
+  
+  <script src="../../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../../index.html" class="icon icon-home"> chpldoc
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../index.html">chpldoc documentation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">GnuPlot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../../index.html">chpldoc</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../../../index.html">Docs</a> &raquo;</li>
+      
+    <li>GnuPlot</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../../../_sources/modules/Users/oplambeck/chapel-gnuplot/src/GnuPlot.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <span class="target" id="module-GnuPlot"></span><div class="section" id="gnuplot">
+<h1>GnuPlot<a class="headerlink" href="#gnuplot" title="Permalink to this headline">¶</a></h1>
+<p><strong>Usage</strong></p>
+<div class="highlight-chapel"><div class="highlight"><pre><span></span><span class="k">use</span> <span class="nx">GnuPlot</span><span class="p">;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Copyright (C) 2018 Marcos Cleison Silva Santana</li>
+<li></li>
+<li>Licensed under the Apache License, Version 2.0 (the &#8220;License&#8221;);</li>
+<li>you may not use this file except in compliance with the License.</li>
+<li>You may obtain a copy of the License at</li>
+<li></li>
+<li><a class="reference external" href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></li>
+<li></li>
+<li>Unless required by applicable law or agreed to in writing, software</li>
+<li>distributed under the License is distributed on an &#8220;AS IS&#8221; BASIS,</li>
+<li>WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</li>
+<li>See the License for the specific language governing permissions and</li>
+<li>limitations under the License.</li>
+</ul>
+<dl class="class">
+<dt id="GnuPlot.Plot">
+<em class="property">class </em><code class="descname">Plot</code><a class="headerlink" href="#GnuPlot.Plot" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="GnuPlot.Plot.gnuplot">
+<em class="property">var </em><code class="descname">gnuplot</code>: GnuPlot<a class="headerlink" href="#GnuPlot.Plot.gnuplot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.Plot.init">
+<em class="property">proc </em><code class="descname">init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.Plot.init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.Plot.print">
+<em class="property">proc </em><code class="descname">print</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.Plot.print" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="GnuPlot.GnuPlot">
+<em class="property">class </em><code class="descname">GnuPlot</code><a class="headerlink" href="#GnuPlot.GnuPlot" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="GnuPlot.GnuPlot.sub">
+<em class="property">var </em><code class="descname">sub</code><a class="headerlink" href="#GnuPlot.GnuPlot.sub" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GnuPlot.GnuPlot.nterm">
+<em class="property">var </em><code class="descname">nterm</code>: int<a class="headerlink" href="#GnuPlot.GnuPlot.nterm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GnuPlot.GnuPlot.typeTerm">
+<em class="property">var </em><code class="descname">typeTerm</code>: string<a class="headerlink" href="#GnuPlot.GnuPlot.typeTerm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GnuPlot.GnuPlot.stdout_">
+<em class="property">var </em><code class="descname">stdout_</code>: bool = true<a class="headerlink" href="#GnuPlot.GnuPlot.stdout_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GnuPlot.GnuPlot.tmpFileDomain">
+<em class="property">var </em><code class="descname">tmpFileDomain</code>: domain(1)<a class="headerlink" href="#GnuPlot.GnuPlot.tmpFileDomain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GnuPlot.GnuPlot.tmpFiles">
+<em class="property">var </em><code class="descname">tmpFiles</code>: [tmpFileDomain] string<a class="headerlink" href="#GnuPlot.GnuPlot.tmpFiles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GnuPlot.GnuPlot.legendTitles">
+<em class="property">var </em><code class="descname">legendTitles</code>: [1..0] string<a class="headerlink" href="#GnuPlot.GnuPlot.legendTitles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GnuPlot.GnuPlot.plotStyles">
+<em class="property">var </em><code class="descname">plotStyles</code>: [1..0] string<a class="headerlink" href="#GnuPlot.GnuPlot.plotStyles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.cmd">
+<em class="property">proc </em><code class="descname">cmd</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.cmd" title="Permalink to this definition">¶</a></dt>
+<dd><p>proc GnuPlot(sub){</p>
+<blockquote>
+<div>this.nterm=0;gnuplot</div></blockquote>
+<p>}</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.run">
+<em class="property">proc </em><code class="descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.set">
+<em class="property">proc </em><code class="descname">set</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setTerminal">
+<em class="property">proc </em><code class="descname">setTerminal</code><span class="sig-paren">(</span><em>type_term: string = &quot;wxt&quot;</em>, <em>nterm: int = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setTerminal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setAngleRadians">
+<em class="property">proc </em><code class="descname">setAngleRadians</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setAngleRadians" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setAngleDegree">
+<em class="property">proc </em><code class="descname">setAngleDegree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setAngleDegree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setArrow">
+<em class="property">proc </em><code class="descname">setArrow</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setArrow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setAutoscale">
+<em class="property">proc </em><code class="descname">setAutoscale</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setAutoscale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setBars">
+<em class="property">proc </em><code class="descname">setBars</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setBars" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setBmargin">
+<em class="property">proc </em><code class="descname">setBmargin</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setBmargin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setMargin">
+<em class="property">proc </em><code class="descname">setMargin</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setMargin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setBorder">
+<em class="property">proc </em><code class="descname">setBorder</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setBorder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setBoxwidth">
+<em class="property">proc </em><code class="descname">setBoxwidth</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setBoxwidth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setClabel">
+<em class="property">proc </em><code class="descname">setClabel</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setClabel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setClip">
+<em class="property">proc </em><code class="descname">setClip</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setClip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setCntrparam">
+<em class="property">proc </em><code class="descname">setCntrparam</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setCntrparam" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setColorbox">
+<em class="property">proc </em><code class="descname">setColorbox</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setColorbox" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setContour">
+<em class="property">proc </em><code class="descname">setContour</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setContour" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setDatafile">
+<em class="property">proc </em><code class="descname">setDatafile</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setDatafile" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setDecimalsign">
+<em class="property">proc </em><code class="descname">setDecimalsign</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setDecimalsign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setDgrid3d">
+<em class="property">proc </em><code class="descname">setDgrid3d</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setDgrid3d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setDummy">
+<em class="property">proc </em><code class="descname">setDummy</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setDummy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setEncoding">
+<em class="property">proc </em><code class="descname">setEncoding</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setEncoding" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setFit">
+<em class="property">proc </em><code class="descname">setFit</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setFit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setFontpath">
+<em class="property">proc </em><code class="descname">setFontpath</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setFontpath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setFormat">
+<em class="property">proc </em><code class="descname">setFormat</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setFormat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setGrid">
+<em class="property">proc </em><code class="descname">setGrid</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setGrid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setHidden3d">
+<em class="property">proc </em><code class="descname">setHidden3d</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setHidden3d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setHistorysize">
+<em class="property">proc </em><code class="descname">setHistorysize</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setHistorysize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setIsosamples">
+<em class="property">proc </em><code class="descname">setIsosamples</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setIsosamples" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setKey">
+<em class="property">proc </em><code class="descname">setKey</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setKey" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setLabel">
+<em class="property">proc </em><code class="descname">setLabel</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setLabel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setLinetype">
+<em class="property">proc </em><code class="descname">setLinetype</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setLinetype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setLmargin">
+<em class="property">proc </em><code class="descname">setLmargin</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setLmargin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setLoadpath">
+<em class="property">proc </em><code class="descname">setLoadpath</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setLoadpath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setLocale">
+<em class="property">proc </em><code class="descname">setLocale</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setLocale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setLogscale">
+<em class="property">proc </em><code class="descname">setLogscale</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setLogscale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setMacros">
+<em class="property">proc </em><code class="descname">setMacros</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setMacros" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setMapping">
+<em class="property">proc </em><code class="descname">setMapping</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setMapping" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setMouse">
+<em class="property">proc </em><code class="descname">setMouse</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setMouse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setMultiplot">
+<em class="property">proc </em><code class="descname">setMultiplot</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setMultiplot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setMx2tics">
+<em class="property">proc </em><code class="descname">setMx2tics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setMx2tics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setMxtics">
+<em class="property">proc </em><code class="descname">setMxtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setMxtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setMy2tics">
+<em class="property">proc </em><code class="descname">setMy2tics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setMy2tics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setMytics">
+<em class="property">proc </em><code class="descname">setMytics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setMytics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setMztics">
+<em class="property">proc </em><code class="descname">setMztics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setMztics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setObject">
+<em class="property">proc </em><code class="descname">setObject</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setOffsets">
+<em class="property">proc </em><code class="descname">setOffsets</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setOffsets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setOrigin">
+<em class="property">proc </em><code class="descname">setOrigin</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setOrigin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setOutput">
+<em class="property">proc </em><code class="descname">setOutput</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setOutput" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setParametric">
+<em class="property">proc </em><code class="descname">setParametric</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setParametric" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setPm3d">
+<em class="property">proc </em><code class="descname">setPm3d</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setPm3d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setPalette">
+<em class="property">proc </em><code class="descname">setPalette</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setPalette" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setPointsize">
+<em class="property">proc </em><code class="descname">setPointsize</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setPointsize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setPolar">
+<em class="property">proc </em><code class="descname">setPolar</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setPolar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setPrint">
+<em class="property">proc </em><code class="descname">setPrint</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setPrint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setPsdir">
+<em class="property">proc </em><code class="descname">setPsdir</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setPsdir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setRaxis">
+<em class="property">proc </em><code class="descname">setRaxis</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setRaxis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setRmargin">
+<em class="property">proc </em><code class="descname">setRmargin</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setRmargin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setRrange">
+<em class="property">proc </em><code class="descname">setRrange</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setRrange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setRtics">
+<em class="property">proc </em><code class="descname">setRtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setRtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setSamples">
+<em class="property">proc </em><code class="descname">setSamples</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setSamples" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setSize">
+<em class="property">proc </em><code class="descname">setSize</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setStyle">
+<em class="property">proc </em><code class="descname">setStyle</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setStyle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setSurface">
+<em class="property">proc </em><code class="descname">setSurface</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setSurface" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setTable">
+<em class="property">proc </em><code class="descname">setTable</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setTable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setTermoption">
+<em class="property">proc </em><code class="descname">setTermoption</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setTermoption" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setTics">
+<em class="property">proc </em><code class="descname">setTics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setTics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setTicslevel">
+<em class="property">proc </em><code class="descname">setTicslevel</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setTicslevel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setTicscale">
+<em class="property">proc </em><code class="descname">setTicscale</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setTicscale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setTimestamp">
+<em class="property">proc </em><code class="descname">setTimestamp</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setTimestamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setTimefmt">
+<em class="property">proc </em><code class="descname">setTimefmt</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setTimefmt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setTitle">
+<em class="property">proc </em><code class="descname">setTitle</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setTitle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setTmargin">
+<em class="property">proc </em><code class="descname">setTmargin</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setTmargin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setTrange">
+<em class="property">proc </em><code class="descname">setTrange</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setTrange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setUrange">
+<em class="property">proc </em><code class="descname">setUrange</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setUrange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setView">
+<em class="property">proc </em><code class="descname">setView</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setView" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setVrange">
+<em class="property">proc </em><code class="descname">setVrange</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setVrange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setX2data">
+<em class="property">proc </em><code class="descname">setX2data</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setX2data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setX2dtics">
+<em class="property">proc </em><code class="descname">setX2dtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setX2dtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setX2label">
+<em class="property">proc </em><code class="descname">setX2label</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setX2label" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setX2range">
+<em class="property">proc </em><code class="descname">setX2range</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setX2range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setX2tics">
+<em class="property">proc </em><code class="descname">setX2tics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setX2tics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setX2zeroaxis">
+<em class="property">proc </em><code class="descname">setX2zeroaxis</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setX2zeroaxis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setXdata">
+<em class="property">proc </em><code class="descname">setXdata</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setXdata" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setXdtics">
+<em class="property">proc </em><code class="descname">setXdtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setXdtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setXlabel">
+<em class="property">proc </em><code class="descname">setXlabel</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setXlabel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setXmtics">
+<em class="property">proc </em><code class="descname">setXmtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setXmtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setXrange">
+<em class="property">proc </em><code class="descname">setXrange</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setXrange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setXtics">
+<em class="property">proc </em><code class="descname">setXtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setXtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setXyplane">
+<em class="property">proc </em><code class="descname">setXyplane</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setXyplane" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setXzeroaxis">
+<em class="property">proc </em><code class="descname">setXzeroaxis</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setXzeroaxis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setY2data">
+<em class="property">proc </em><code class="descname">setY2data</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setY2data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setY2dtics">
+<em class="property">proc </em><code class="descname">setY2dtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setY2dtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setY2mtics">
+<em class="property">proc </em><code class="descname">setY2mtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setY2mtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setY2range">
+<em class="property">proc </em><code class="descname">setY2range</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setY2range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setY2tics">
+<em class="property">proc </em><code class="descname">setY2tics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setY2tics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setY2zeroaxis">
+<em class="property">proc </em><code class="descname">setY2zeroaxis</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setY2zeroaxis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setYdata">
+<em class="property">proc </em><code class="descname">setYdata</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setYdata" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setYdtics">
+<em class="property">proc </em><code class="descname">setYdtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setYdtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setYlabel">
+<em class="property">proc </em><code class="descname">setYlabel</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setYlabel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setYmtics">
+<em class="property">proc </em><code class="descname">setYmtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setYmtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setYrange">
+<em class="property">proc </em><code class="descname">setYrange</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setYrange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setYtics">
+<em class="property">proc </em><code class="descname">setYtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setYtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setYzeroaxis">
+<em class="property">proc </em><code class="descname">setYzeroaxis</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setYzeroaxis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setZdata">
+<em class="property">proc </em><code class="descname">setZdata</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setZdata" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setZdtics">
+<em class="property">proc </em><code class="descname">setZdtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setZdtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setZzeroaxis">
+<em class="property">proc </em><code class="descname">setZzeroaxis</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setZzeroaxis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setCbdata">
+<em class="property">proc </em><code class="descname">setCbdata</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setCbdata" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setCbdtics">
+<em class="property">proc </em><code class="descname">setCbdtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setCbdtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setZero">
+<em class="property">proc </em><code class="descname">setZero</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setZero" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setZeroaxis">
+<em class="property">proc </em><code class="descname">setZeroaxis</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setZeroaxis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setZlabel">
+<em class="property">proc </em><code class="descname">setZlabel</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setZlabel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setZmtics">
+<em class="property">proc </em><code class="descname">setZmtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setZmtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setZrange">
+<em class="property">proc </em><code class="descname">setZrange</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setZrange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setZtics">
+<em class="property">proc </em><code class="descname">setZtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setZtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setCblabel">
+<em class="property">proc </em><code class="descname">setCblabel</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setCblabel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setCbmtics">
+<em class="property">proc </em><code class="descname">setCbmtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setCbmtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setCbrange">
+<em class="property">proc </em><code class="descname">setCbrange</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setCbrange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setCbtics">
+<em class="property">proc </em><code class="descname">setCbtics</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setCbtics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.Writeln">
+<em class="property">proc </em><code class="descname">Writeln</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.Writeln" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.plotD">
+<em class="property">proc </em><code class="descname">plotD</code><span class="sig-paren">(</span><em>A: [?D] ?eltType</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.plotD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.plotXY">
+<em class="property">proc </em><code class="descname">plotXY</code><span class="sig-paren">(</span><em>X: [?DX] ?eltType</em>, <em>Y: [?DY] ?eltType2</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.plotXY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.legends">
+<em class="property">proc </em><code class="descname">legends</code><span class="sig-paren">(</span><em>X ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.legends" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.setPlotStyle">
+<em class="property">proc </em><code class="descname">setPlotStyle</code><span class="sig-paren">(</span><em>X ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.setPlotStyle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.plot">
+<em class="property">proc </em><code class="descname">plot</code><span class="sig-paren">(</span><em>X ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GnuPlot.GnuPlot.ImageMatrix">
+<em class="property">proc </em><code class="descname">ImageMatrix</code><span class="sig-paren">(</span><em>A: [?D] ?eltType</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.GnuPlot.ImageMatrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="GnuPlot._getProcessArguments">
+<em class="property">proc </em><code class="descname">_getProcessArguments</code><span class="sig-paren">(</span><em>args ...?n</em><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot._getProcessArguments" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GnuPlot.CreateGnuPlot">
+<em class="property">proc </em><code class="descname">CreateGnuPlot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GnuPlot.CreateGnuPlot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../../../../../index.html" class="btn btn-neutral" title="chpldoc documentation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../../../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+
+
+
+</body>
+</html>

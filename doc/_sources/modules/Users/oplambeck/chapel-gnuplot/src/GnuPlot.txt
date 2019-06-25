@@ -1,0 +1,320 @@
+.. default-domain:: chpl
+
+.. module:: GnuPlot
+   :synopsis: * Copyright (C) 2018 Marcos Cleison Silva Santana
+
+GnuPlot
+=======
+**Usage**
+
+.. code-block:: chapel
+
+   use GnuPlot;
+
+
+* Copyright (C) 2018 Marcos Cleison Silva Santana
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+
+
+.. class:: Plot
+
+   .. attribute:: var gnuplot: GnuPlot
+
+   .. method:: proc init()
+
+   .. method:: proc print(args ...?n)
+
+.. class:: GnuPlot
+
+   .. attribute:: var sub
+
+   .. attribute:: var nterm: int
+
+   .. attribute:: var typeTerm: string
+
+   .. attribute:: var stdout_: bool = true
+
+   .. attribute:: var tmpFileDomain: domain(1)
+
+   .. attribute:: var tmpFiles: [tmpFileDomain] string
+
+   .. attribute:: var legendTitles: [1..0] string
+
+   .. attribute:: var plotStyles: [1..0] string
+
+   .. method:: proc cmd(args ...?n)
+
+      proc GnuPlot(sub){
+      
+          this.nterm=0;gnuplot
+          
+      
+      }
+
+   .. method:: proc run()
+
+   .. method:: proc set(args ...?n)
+
+   .. method:: proc setTerminal(type_term: string = "wxt", nterm: int = 0)
+
+   .. method:: proc setAngleRadians()
+
+   .. method:: proc setAngleDegree()
+
+   .. method:: proc setArrow(args ...?n)
+
+   .. method:: proc setAutoscale(args ...?n)
+
+   .. method:: proc setBars(args ...?n)
+
+   .. method:: proc setBmargin(args ...?n)
+
+   .. method:: proc setMargin(args ...?n)
+
+   .. method:: proc setBorder(args ...?n)
+
+   .. method:: proc setBoxwidth(args ...?n)
+
+   .. method:: proc setClabel(args ...?n)
+
+   .. method:: proc setClip(args ...?n)
+
+   .. method:: proc setCntrparam(args ...?n)
+
+   .. method:: proc setColorbox(args ...?n)
+
+   .. method:: proc setContour(args ...?n)
+
+   .. method:: proc setDatafile(args ...?n)
+
+   .. method:: proc setDecimalsign(args ...?n)
+
+   .. method:: proc setDgrid3d(args ...?n)
+
+   .. method:: proc setDummy(args ...?n)
+
+   .. method:: proc setEncoding(args ...?n)
+
+   .. method:: proc setFit(args ...?n)
+
+   .. method:: proc setFontpath(args ...?n)
+
+   .. method:: proc setFormat(args ...?n)
+
+   .. method:: proc setGrid(args ...?n)
+
+   .. method:: proc setHidden3d(args ...?n)
+
+   .. method:: proc setHistorysize(args ...?n)
+
+   .. method:: proc setIsosamples(args ...?n)
+
+   .. method:: proc setKey(args ...?n)
+
+   .. method:: proc setLabel(args ...?n)
+
+   .. method:: proc setLinetype(args ...?n)
+
+   .. method:: proc setLmargin(args ...?n)
+
+   .. method:: proc setLoadpath(args ...?n)
+
+   .. method:: proc setLocale(args ...?n)
+
+   .. method:: proc setLogscale(args ...?n)
+
+   .. method:: proc setMacros(args ...?n)
+
+   .. method:: proc setMapping(args ...?n)
+
+   .. method:: proc setMouse(args ...?n)
+
+   .. method:: proc setMultiplot(args ...?n)
+
+   .. method:: proc setMx2tics(args ...?n)
+
+   .. method:: proc setMxtics(args ...?n)
+
+   .. method:: proc setMy2tics(args ...?n)
+
+   .. method:: proc setMytics(args ...?n)
+
+   .. method:: proc setMztics(args ...?n)
+
+   .. method:: proc setObject(args ...?n)
+
+   .. method:: proc setOffsets(args ...?n)
+
+   .. method:: proc setOrigin(args ...?n)
+
+   .. method:: proc setOutput(args ...?n)
+
+   .. method:: proc setParametric(args ...?n)
+
+   .. method:: proc setPm3d(args ...?n)
+
+   .. method:: proc setPalette(args ...?n)
+
+   .. method:: proc setPointsize(args ...?n)
+
+   .. method:: proc setPolar(args ...?n)
+
+   .. method:: proc setPrint(args ...?n)
+
+   .. method:: proc setPsdir(args ...?n)
+
+   .. method:: proc setRaxis(args ...?n)
+
+   .. method:: proc setRmargin(args ...?n)
+
+   .. method:: proc setRrange(args ...?n)
+
+   .. method:: proc setRtics(args ...?n)
+
+   .. method:: proc setSamples(args ...?n)
+
+   .. method:: proc setSize(args ...?n)
+
+   .. method:: proc setStyle(args ...?n)
+
+   .. method:: proc setSurface(args ...?n)
+
+   .. method:: proc setTable(args ...?n)
+
+   .. method:: proc setTermoption(args ...?n)
+
+   .. method:: proc setTics(args ...?n)
+
+   .. method:: proc setTicslevel(args ...?n)
+
+   .. method:: proc setTicscale(args ...?n)
+
+   .. method:: proc setTimestamp(args ...?n)
+
+   .. method:: proc setTimefmt(args ...?n)
+
+   .. method:: proc setTitle(args ...?n)
+
+   .. method:: proc setTmargin(args ...?n)
+
+   .. method:: proc setTrange(args ...?n)
+
+   .. method:: proc setUrange(args ...?n)
+
+   .. method:: proc setView(args ...?n)
+
+   .. method:: proc setVrange(args ...?n)
+
+   .. method:: proc setX2data(args ...?n)
+
+   .. method:: proc setX2dtics(args ...?n)
+
+   .. method:: proc setX2label(args ...?n)
+
+   .. method:: proc setX2range(args ...?n)
+
+   .. method:: proc setX2tics(args ...?n)
+
+   .. method:: proc setX2zeroaxis(args ...?n)
+
+   .. method:: proc setXdata(args ...?n)
+
+   .. method:: proc setXdtics(args ...?n)
+
+   .. method:: proc setXlabel(args ...?n)
+
+   .. method:: proc setXmtics(args ...?n)
+
+   .. method:: proc setXrange(args ...?n)
+
+   .. method:: proc setXtics(args ...?n)
+
+   .. method:: proc setXyplane(args ...?n)
+
+   .. method:: proc setXzeroaxis(args ...?n)
+
+   .. method:: proc setY2data(args ...?n)
+
+   .. method:: proc setY2dtics(args ...?n)
+
+   .. method:: proc setY2mtics(args ...?n)
+
+   .. method:: proc setY2range(args ...?n)
+
+   .. method:: proc setY2tics(args ...?n)
+
+   .. method:: proc setY2zeroaxis(args ...?n)
+
+   .. method:: proc setYdata(args ...?n)
+
+   .. method:: proc setYdtics(args ...?n)
+
+   .. method:: proc setYlabel(args ...?n)
+
+   .. method:: proc setYmtics(args ...?n)
+
+   .. method:: proc setYrange(args ...?n)
+
+   .. method:: proc setYtics(args ...?n)
+
+   .. method:: proc setYzeroaxis(args ...?n)
+
+   .. method:: proc setZdata(args ...?n)
+
+   .. method:: proc setZdtics(args ...?n)
+
+   .. method:: proc setZzeroaxis(args ...?n)
+
+   .. method:: proc setCbdata(args ...?n)
+
+   .. method:: proc setCbdtics(args ...?n)
+
+   .. method:: proc setZero(args ...?n)
+
+   .. method:: proc setZeroaxis(args ...?n)
+
+   .. method:: proc setZlabel(args ...?n)
+
+   .. method:: proc setZmtics(args ...?n)
+
+   .. method:: proc setZrange(args ...?n)
+
+   .. method:: proc setZtics(args ...?n)
+
+   .. method:: proc setCblabel(args ...?n)
+
+   .. method:: proc setCbmtics(args ...?n)
+
+   .. method:: proc setCbrange(args ...?n)
+
+   .. method:: proc setCbtics(args ...?n)
+
+   .. method:: proc Writeln(args ...?n)
+
+   .. method:: proc plotD(A: [?D] ?eltType)
+
+   .. method:: proc plotXY(X: [?DX] ?eltType, Y: [?DY] ?eltType2)
+
+   .. method:: proc legends(X ...?n)
+
+   .. method:: proc setPlotStyle(X ...?n)
+
+   .. method:: proc plot(X ...?n)
+
+   .. method:: proc ImageMatrix(A: [?D] ?eltType)
+
+.. function:: proc _getProcessArguments(args ...?n)
+
+.. function:: proc CreateGnuPlot()
+
